@@ -1,15 +1,17 @@
 from os import name
 import flask
 from flask import Flask,render_template,request,redirect,url_for,session
-from flask_mysqldb import MySQL
 #import MySQLdb.cursors
+from flask_mysqldb import MySQL
 import re
 app = Flask(__name__)
 
+
 app.config['MYSQL_HOST']='localhost'
-app.config['MYSQL_USER']='root'
-app.config['MYSQL_PASSWORD']='GDSiddu@3858'
-app.config['MYSQL_DB']='s_details'
+app.config['MYSQL_USER']='newuser'
+app.config['MYSQL_PASSWORD']='realme3pro'
+app.config['MYSQL_DB']='cricket'
+
 mysql=MySQL(app)
 @app.route("/")
 def f1():
@@ -43,3 +45,8 @@ def f5():
     return render_template('display.html')
     
 app.run(debug=True)
+from flask import Flask,render_template,request,redirect
+from flask_mysqldb import MySQL
+import MySQLdb.cursors
+
+app = Flask(__name__)
