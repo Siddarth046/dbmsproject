@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/add_data.css" />
+    <link rel="stylesheet" href="/static/delete.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="https://wassets.hscicdn.com/static/images/logo.png" class="logo" alt="logo">
+        <ul class="menu">
+            <li><a href="/" target="">Home</a></li>
+            <li><a href="/add_data" target="">Add Data</a></li>
+            <li><a href="/delete_data" class="shade" target="">Delete Data</a></li>
+            <li><a href="/update_data" target="">Update Data</a></li>
+            <li><a href="/Player_details" target="">Player_details</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>DELETE OPERATION:</h1>
+        <form action="" method="POST">
+          <h3>ENTER CORRECT DETAILS:</h3>
+          <br>
+            <div class="P_info">
+                <ul>
+                    <li>
+                        <label for="P_fname"><strong>Player First Name:</strong></label>
+                        <input type="text" id="P_fname" name="P_fname" >
+                    </li>
+                    <li>
+                        <label for="P_lname"><strong>Player Second Name:</strong></label>
+                        <input type="text" id="P_lname" name="P_lname" >
+                    </li>
+                        <label for="select_table"><strong>Choose which table should be deleted:</strong></label>
+                        <input list="ltable" name="select_table" id="select_table">
+                        <datalist id="ltable">
+                            <option value="PlayerInformation">
+                            <option value="BattingCareer">
+                            <option value="BattingCareerInTest">
+                            <option value="BattingCareerInOdi">
+                            <option value="BattingCareerInT20">
+                            <option value="BattingCareerInIPL">
+                            <option value="BowlingCareer">
+                            <option value="BowlingCareerInTest">
+                            <option value="BowlingCareerInOdi">
+                            <option value="BowlingCareerInT20">
+                            <option value="BowlingCareerInIPL">
+                          </datalist>
+                        <input type="submit">
+                </ul>
+             </div>
+            <hr />
+            <br /><br />
+        </form>
+    </div>
+    <!-- <footer>
+        <img src="https://wassets.hscicdn.com/static/images/logo.png" alt="logo">
+        <div class="footer_div">
+           <h3>FOLLOW US ON</h3>
+           <ul>
+               <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+           </ul>
+        </div>
+       </footer> -->
+</body>
+</html>
