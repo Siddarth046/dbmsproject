@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/static/login.css">
+    <link rel="stylesheet" href="/static/Contact_Us.css">
+    <link rel="stylesheet" href="/static/home.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="https://wassets.hscicdn.com/static/images/logo.png" class="logo" alt="logo">
+        <ul class="menu">
+            <li><a href="/" target="">Home</a></li>
+            <!-- <li><a href="/Player_details" target="">Player_details</a></li>
+            <li><a href="/details" target="">Datails</a></li> -->
+            <li><a href="/contacts">Contact Us</a></li>
+        </ul>
+        <!-- <ul class="menu2">
+            <li><a href="/login" target="">Login</a></li>
+            <li><a href="#" target="">Sign-Up</a></li>
+        </ul> -->
+    </nav>
+    <div class="container">
+        <h2>SIGN-UP</h2>
+        <form action="" method="POST">
+            <div class="fdiv1">
+                <div>{{msg}}</div>
+                <label for="name">Username</label><br>
+                <input type="text" id="name" name="username" placeholder="Enter Username"><br>
+            </div>
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter Email"><br>
+            </div>
+            <div>
+                <label for="paswd">Password</label><br>
+                <input type="password" id="paswd" name="password" placeholder="Enter Password"><br>
+            </div>
+            <div>
+                <label for="paswd1">Repeat Password</label><br>
+                <input type="password" id="paswd1" name="password1" placeholder="Enter Password Again"><br>
+            </div>
+            <div class="login">
+                <input type="submit" value="Create an Account">
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox" checked="checked">Remember me
+            </div>
+        </form>
+    </div>
+    <footer>
+        <img src="https://wassets.hscicdn.com/static/images/logo.png" alt="logo">
+        <div class="footer_div">
+           <h3>FOLLOW US ON</h3>
+           <ul>
+               <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+           </ul>
+        </div>
+       </footer>
+</body>
+</html>
