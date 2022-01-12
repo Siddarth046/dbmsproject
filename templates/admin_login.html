@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/login.css">
+    <link rel="stylesheet" href="/static/Contact_Us.css">
+    <link rel="stylesheet" href="/static/home.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="https://wassets.hscicdn.com/static/images/logo.png" class="logo" alt="logo">
+        <ul class="menu">
+            <li><a href="/home" target="">Home</a></li>
+            <li><a href="/Player_details" target="">Player_details</a></li>
+            <li><a href="/contacts">Contact Us</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>ADMIN LOGIN:</h2>
+        <form action="" method="POST">
+            <!-- <div>{{msg}}</div> -->
+            <div class="fdiv1">
+                <div><strong style="color: Red;">{{msg}}</strong></div>
+                <label for="name">Username</label><br>
+                <input type="text" id="name" name="username" placeholder="Enter Username"><br>
+            </div>
+            <div>
+                <label for="paswd">Password</label><br>
+                <input type="password" id="paswd" name="password" placeholder="Enter Password"><br>
+            </div>
+            <div class="login">
+                <input type="submit">
+            </div>
+            <div>
+                <input class="checkbox" type="checkbox" checked="checked">Remember me
+            </div>
+            <div class="cancel">
+                    <a href="">cancel</a>
+            </div>
+            <div class="f_pswd">
+                <a href="" style="text-decoration: none;"> Forgot Password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

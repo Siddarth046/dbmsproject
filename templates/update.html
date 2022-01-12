@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/add_data.css"/>
+    <link rel="stylesheet" href="/static/update.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <img src="https://wassets.hscicdn.com/static/images/logo.png" class="logo" alt="logo">
+        <ul class="menu">
+            <li><a href="/home" target="">Home</a></li>
+            <li><a href="/add_data" target="">Add Data</a></li>
+            <li><a href="/delete_data" target="">Delete Data</a></li>
+            <li><a href="/update_data" class="shade" target="">Update Data</a></li>
+            <li><a href="/Player_details" target="">Player_details</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>UPDATE OPERATION:</h1>
+        <form action="" method="POST">
+          <h3>ENTER CORRECT DETAILS:</h3>
+          <br>
+            <div class="P_info">
+                <label for="select_table1"><strong>Choose which table should be deleted:</strong></label>
+                        <input list="ltable1" name="select_table1" id="select_table1">
+                        <datalist id="ltable1">
+                            <option value="BattingCareerInTest">
+                            <option value="BowlingCareerInTest">
+                            <option value="Allrounder">
+                          </datalist>
+                          <br><br>
+                <h3>Batting/Bowling Career In Test:</h3>
+                <ul>
+                    <li>
+                        <label for="P_fname"><strong>Player First Name:</strong></label>
+                        <input type="text" id="P_fname" name="P_fname" >
+                    </li>
+                    <li>
+                        <label for="P_lname"><strong>Player Second Name:</strong></label>
+                        <input type="text" id="P_lname" name="P_lname" >
+                    </li>
+                    <li>
+                        <label for="matches"><strong>Matches</strong></label>
+                        <input type="number" id="matches" name="matches">
+                    </li>
+                    <li>
+                        <label for="Innings"><strong>Innings</strong></label>
+                        <input type="number" id="Innings" name="Innings">
+                    </li>
+                    <li>
+                        <label for="runs"><strong>Runs Scored</strong></label>
+                        <input type="number" id="runs" name="runs" >
+                    </li>
+                    <li>
+                        <label for="wickets"><strong>wickets</strong></label>
+                        <input type="number" id="wickets" name="wickets" >
+                    </li>
+                    <li>
+                        <label for="Runsg"><strong>Runs Given</strong></label>
+                        <input type="number" id="Runsg" name="Runsg" >
+                    </li>
+                    <li>
+                        <label for="Average"><strong>Average</strong></label>
+                        <input type="text" id="Average" name="Average" >
+                    </li>
+                    <input type="submit">
+                </ul>
+                <br><br>
+             </div>
+        </form>
+    </div>
+    <!-- <footer>
+        <img src="https://wassets.hscicdn.com/static/images/logo.png" alt="logo">
+        <div class="footer_div">
+           <h3>FOLLOW US ON</h3>
+           <ul>
+               <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+               <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+               <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+           </ul>
+        </div>
+       </footer> -->
+</body>
+</html>
